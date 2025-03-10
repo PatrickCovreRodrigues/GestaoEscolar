@@ -1,0 +1,112 @@
+body {
+        background-color: #f3f4f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        margin-left: 220px;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        padding: 20px;
+        width: 500px;
+        transition: transform 0.3s ease;
+    }
+
+    .container:hover {
+        transform: scale(1.02);
+    }
+
+    .tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .tabs button {
+        width: 100%;
+        padding: 10px 20px;
+        border: none;
+        border-bottom: 2px solid transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background-color: transparent;
+    }
+
+    .tabs button:hover {
+        color: #4f46e5;
+    }
+
+    .active-tab {
+        border-color: #4f46e5;
+        color: #4f46e5;
+    }
+
+    .formulario,
+    .listagem {
+        display: none;
+        animation: fadeIn 0.5s ease;
+    }
+
+    .formulario input{
+        width: 95%;
+    }
+
+    .formulario input,
+    .formulario button {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        transition: border-color 0.3s ease;
+    }
+
+    .formulario input:focus {
+        border-color: #4f46e5;
+        outline: none;
+    }
+
+    .formulario button {
+        background-color: #4f46e5;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .formulario button:hover {
+        background-color: #4338ca;
+    }
+
+    .listagem table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .listagem th {
+        background-color: #4f46e5;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .listagem td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .listagem tr:hover {
+        background-color: #f3f4f6;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
